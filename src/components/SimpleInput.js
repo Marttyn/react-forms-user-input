@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import useInput from "../hooks/use-input";
 
@@ -30,7 +30,7 @@ const SimpleInput = () => {
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
-    if (!nameIsValid) {
+    if (!formIsValid) {
       return;
     }
 
